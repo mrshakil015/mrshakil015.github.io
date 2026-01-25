@@ -558,6 +558,14 @@ h4 {
   }
 }
 
+@media (max-width: 768px) {
+    .floating-badge {
+        display: none;
+    }
+    
+}
+
+
 /* Section General */
 .section {
   padding: 40px 0;
@@ -892,106 +900,7 @@ h4 {
   color: var(--primary-color);
 }
 
-/* Services Section */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
 
-.service-card {
-  background: rgba(15, 23, 42, 0.6);
-  padding: 2.5rem;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.service-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: var(--gradient-1);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.service-card:hover::before {
-  opacity: 1;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  background: rgba(30, 41, 59, 0.8);
-  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.4);
-}
-
-.service-icon {
-  width: 70px;
-  height: 70px;
-  background: rgba(56, 189, 248, 0.1);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.service-icon i {
-  font-size: 2rem;
-  color: var(--primary-color);
-}
-
-.service-card:hover .service-icon {
-  background: rgba(56, 189, 248, 0.2);
-  transform: scale(1.1);
-}
-
-.service-card h3 {
-  font-size: 1.5rem;
-  color: #fff;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.service-card > p {
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-}
-
-.service-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid var(--glass-border);
-  padding-top: 1.5rem;
-}
-
-.service-features li {
-  color: var(--text-muted);
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 0.95rem;
-}
-
-.service-features li i {
-  color: var(--primary-color);
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* Experience - Career Stack */
 .career-stack {
@@ -1084,7 +993,7 @@ h4 {
 
 .duration {
   font-size: 0.85rem;
-  color: var(--forth-color);
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
@@ -1418,6 +1327,107 @@ h4 {
   font-size: 0.9rem;
 }
 
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.service-card {
+  background: rgba(15, 23, 42, 0.6);
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  background: rgba(30, 41, 59, 0.8);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(56, 189, 248, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-icon i {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.service-card:hover .service-icon {
+  background: rgba(56, 189, 248, 0.2);
+  transform: scale(1.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.service-card > p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 1.5rem;
+}
+
+.service-features li {
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.service-features li i {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Education (Separate) */
 .education-card {
   background: rgba(15, 23, 42, 0.6);
@@ -1438,7 +1448,7 @@ h4 {
 
 .edu-icon {
   font-size: 3rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   background: rgba(129, 140, 248, 0.1);
   width: 80px;
   height: 80px;
@@ -1575,7 +1585,7 @@ h4 {
 
 .form-group input,
 .form-group textarea {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(56, 189, 248, 0.05);
   border: 1px solid var(--glass-border);
   border-radius: 8px;
   padding: 0.9rem 1.2rem;
@@ -1706,7 +1716,7 @@ footer {
   }
 
   .edu-details h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .edu-details h4 {
@@ -1717,6 +1727,7 @@ footer {
   }
   .edu-cgpa{
     font-weight: 500;
+    font-size: 0.7rem;
   }
 }
 
